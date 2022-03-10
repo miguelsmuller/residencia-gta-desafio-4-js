@@ -1,11 +1,12 @@
 ![Imgur](https://i.imgur.com/j9JmM4L.png)
 
-# **Trilha Específica - Desafio 3 - JavaScript - Parte 1**
+# **Trilha Específica - Desafio 5 - JavaScript - Parte 2**
 
 ## **Grupo 06**
 
 - [Miguel Müller](https://github.com/devcarlosl)
 - [Rodrigo Rios](https://github.com/Rodrigo-Rios)
+- [Laíza Baptista](https://github.com/laizabaptista)
 
 <br/>
 
