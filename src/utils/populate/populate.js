@@ -13,25 +13,24 @@ const file = path.join(__dirname, '../../../public_html/noticiasFromG1.json')
 const rawdata = fs.readFileSync(file)
 const noticias = JSON.parse(rawdata)
 
-
-noticias.forEach((noticia) => {
-    const {
-        image,
-        title,
-        href,
-        subtitle,
-        linkArticle
-    } = noticia
-
-    model.create({
-        title: title,
-        newsUrl: href,
-        subtitle: subtitle,
-        imageUrl: image,
-        relatedNews: linkArticle
-    }).then((data) => {
-        console.log(data)
+async function inserirNoticia(noticia) {
+    console.log("Solicitação iniciada")
+    await model.create({
+        title: noticia.title,
+        newsUrl: noticia.href,
+        subtitle: noticia.subtitle,
+        imageUrl: noticia.image,
+        relatedNews: noticia.linkArticle
     })
-    return true
-})
+}
 
+function main() {
+    for (let noticia of noticias) {
+        inserirNoticia(noticia).then(() => {
+            console.log("Execução da solicitação finalizada")
+        })
+    }
+    console.log("Fim do laço de repetição");
+}
+
+main();

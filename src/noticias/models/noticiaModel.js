@@ -12,18 +12,16 @@ class NoticiaModel {
       relatedNews
     } = news
 
-    console.log(title, newsUrl, subtitle, imageUrl, relatedNews)
-
     const sql = `
         INSERT INTO news (title, newsUrl, subtitle, imageUrl, relatedNews) 
         VALUES (?,?,?,?,?) 
         `
-    const [result] = await this.dbConnection.execute(
+    const result = await this.dbConnection.execute(
       sql, [title, newsUrl, subtitle, imageUrl, relatedNews]
     )
 
 
-    return result.insertId
+    return result
   }
 
   async search(query) {
