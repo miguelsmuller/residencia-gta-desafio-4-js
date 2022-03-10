@@ -1,6 +1,6 @@
 ![Imgur](https://i.imgur.com/j9JmM4L.png)
 
-# **Trilha Específica - Desafio 5 - JavaScript - Parte 2**
+# **Trilha Específica - Desafio 4 - JavaScript - Parte 2**
 
 ## **Grupo 06**
 
