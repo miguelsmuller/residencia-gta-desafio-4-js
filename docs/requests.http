@@ -1,5 +1,0 @@
-###
-GET http://localhost:333/health
-
-###
-GET http://localhost:333/noticias/search?titleContains=homem

@@ -12,6 +12,8 @@ class NoticiaModel {
       relatedNews
     } = news
 
+    console.log(title, newsUrl, subtitle, imageUrl, relatedNews)
+
     const sql = `
         INSERT INTO news (title, newsUrl, subtitle, imageUrl, relatedNews) 
         VALUES (?,?,?,?,?) 
@@ -19,6 +21,7 @@ class NoticiaModel {
     const [result] = await this.dbConnection.execute(
       sql, [title, newsUrl, subtitle, imageUrl, relatedNews]
     )
+
 
     return result.insertId
   }

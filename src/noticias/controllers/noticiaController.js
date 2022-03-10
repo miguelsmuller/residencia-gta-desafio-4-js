@@ -1,4 +1,6 @@
 const { Router } = require('express');
+const authMiddleware = require('../../api/shared/middlewares/authMiddleware');
+
 
 class NoticiaController {
     constructor(noticiaModel) {
@@ -7,7 +9,7 @@ class NoticiaController {
 
     buildRouter() {
         const router = Router();
-        router.get('/search', this.handleGetNoticias.bind(this));
+        router.get('/search', authMiddleware, this.handleGetNoticias.bind(this));
         return router;
     }
 

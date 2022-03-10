@@ -1,7 +1,5 @@
 const mysql = require('mysql2/promise')
 
-require('dotenv').config()
-
 const {
   DB_HOST, DB_PORT, DB_USER, DB_PASS, DB_DATABASE
 } = process.env

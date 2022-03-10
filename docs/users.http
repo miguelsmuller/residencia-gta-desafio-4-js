@@ -1,0 +1,20 @@
+###
+POST http://localhost:333/users/signup HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "birthday": "1991-09-24 03:00:00",
+    "email": "miguel@email.com",
+    "personalDocument": "11111111111",
+    "password": "123456"
+}
+
+###
+POST http://localhost:333/users/signin HTTP/1.1
+content-type: application/json
+
+{
+    "email": "miguel@email.com",
+    "password": "123456"
+}

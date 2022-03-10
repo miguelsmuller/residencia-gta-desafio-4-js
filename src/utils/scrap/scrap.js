@@ -1,10 +1,10 @@
 const cheerio = require('cheerio')
 
-const { scrapHTML } = require('../utils/scrapHtml')
-const { getDataPosts } = require('../utils/getDataPosts')
-const { writeJsonFile } = require('../utils/writeJsonFile')
+const { scrapHTML } = require('../scrapHtml')
+const { getDataPosts } = require('../getDataPosts')
+const { writeJsonFile } = require('../writeJsonFile')
 
-async function createJsonFile () {
+async function createJsonFile() {
   try {
     const html = await getDataPosts()
     const $ = cheerio.load(html)

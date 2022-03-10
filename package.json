@@ -3,33 +3,32 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "exe:scrap": "node src/scrap/scrap.js",
-    "exe:populate": "node src/populate/populate.js",
+    "exe:scrap": "node src/utils/scrap/scrap.js",
+    "exe:populate": "node src/utils/populate/populate.js",
     "exe:api": "nodemon src/api/server.js",
     "lint": "npx eslint .eslintrc.js",
     "lint:fix": "npm run lint -- --fix"
   },
   "contributors": [
     {
-      "name": "",
-      "url": "https://"
+      "name": "Miguel Müller",
+      "url": "https://github.com/miguelsmuller"
     },
     {
-      "name": "",
-      "url": "https://"
-    },
-    {
-      "name": "",
-      "url": "https://"
+      "name": "Rodrigo Rios",
+      "url": "https://github.com/Rodrigo-Rios"
     }
   ],
   "license": "ISC",
   "dependencies": {
     "axios": "0.26.0",
+    "bcrypt": "^5.0.1",
     "cheerio": "1.0.0-rc.10",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "mysql2": "^2.3.3"
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

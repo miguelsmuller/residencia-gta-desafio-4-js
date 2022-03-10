@@ -1,0 +1,11 @@
+###
+GET http://localhost:333/health
+
+###
+GET http://localhost:333/noticias/search?titleContains=transplante
+content-type: application/json
+
+###
+GET http://localhost:333/noticias/search?titleContains=transplante
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsIm5hbWVPZlVzZXIiOiJzYW1wbGUiLCJpYXQiOjE2NDY4NzI5OTMsImV4cCI6MTY0NzEzMjE5M30.yx0ptV6PY1Cw8HcDLEUJCSB-KisdBH9CoWuBoiNlkD8

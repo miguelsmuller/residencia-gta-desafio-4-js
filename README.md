@@ -4,11 +4,8 @@
 
 ## **Grupo 06**
 
-- [Carlos Lopes](https://github.com/devcarlosl)
-- [Heloise Meirelles](https://github.com/Heloisemeirelles)
-- [Marcel Pontes](https://github.com/mfnp14)
-- [Miguel Muller](https://github.com/miguelsmuller)
-- [Thais Buchweitz Alonso](https://github.com/buchevitss)
+- [Miguel Müller](https://github.com/devcarlosl)
+- [Rodrigo Rios](https://github.com/Rodrigo-Rios)
 
 <br/>
 
