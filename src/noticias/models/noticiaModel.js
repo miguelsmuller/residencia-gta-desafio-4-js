@@ -13,13 +13,15 @@ class NoticiaModel {
     } = news
 
     const sql = `
-        INSERT INTO news (title, newsUrl, subtitle, imageUrl, relatedNews) 
-        VALUES (?,?,?,?,?) 
+        INSERT INTO news(title, newsUrl, subtitle, imageUrl, relatedNews) 
+        VALUES (?,?,?,?,?);
         `
-    const result = await this.dbConnection.execute(
+
+    let result = ""
+
+    result = await this.dbConnection.query(
       sql, [title, newsUrl, subtitle, imageUrl, relatedNews]
     )
-
 
     return result
   }
